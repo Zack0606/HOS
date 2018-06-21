@@ -3,18 +3,8 @@ const Bmob = require('utils/bmob.js');
 Bmob.initialize("43edf782e0c9f04b3118c17b2c3f9ebe", "7f0b49f19a58d885bb248c3c64ac9fa6");
 
 App({
-  version: 'v2.2.4', //版本号
   onLaunch: function () {
     var that = this;
-    //调用系统API获取设备的信息
-    wx.getSystemInfo({
-      success: function (res) {
-        var kScreenW = res.windowWidth / 375
-        var kScreenH = res.windowHeight / 603
-        wx.setStorageSync('kScreenW', kScreenW)
-        wx.setStorageSync('kScreenH', kScreenH)
-      }
-    })
     //调用API从本地缓存中获取数据
     try {
       var value = wx.getStorageSync('user_openid')
@@ -80,7 +70,6 @@ App({
                                 console.log(error)
                               }
                             });
-
                           }
                         }
                       });
@@ -150,7 +139,5 @@ App({
     //wx.stopPullDownRefresh()
   },
   onError: function (msg) {
-  },
-  Touches: new Touches(),
-  util: __utils,
+  }
 })
