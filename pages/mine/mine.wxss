@@ -1,0 +1,55 @@
+.top-part {
+  background: #00BFFF;
+  height:400rpx;
+  display: block;
+}
+.btn_op1{
+  text-align: center;
+  font-size:14px;
+  color:#FF9C35;
+  padding: 5px 20px;
+  border:1px solid #FF9C35;
+  border-radius: 25px;
+  width: 100px;
+  z-index: 10;
+}
+.btn_op2{
+  text-align: center;
+  font-size:14px;
+  color:#B6D9A9;
+  padding: 5px 20px;
+  border:1px solid #B6D9A9;
+  border-radius: 25px;
+  width: 100px;
+}
+.btn-bar{
+  display: flex;
+  margin-top:20px;
+}
+.btn-block{
+  width: 50%;
+  display: flex;
+  justify-content:center;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  margin-top: 50rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #000;
+  font-size: 40rpx;
+}
+
+.usermotto {
+  margin-top: 200px;
+}

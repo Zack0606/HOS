@@ -1,0 +1,20 @@
+<!--logs.wxml-->
+<view class="top-part">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 微信账号登陆 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <view class='btn-bar'>
+        <view class='btn-block'>
+          <view class="btn_op1">我的信息</view>
+        </view>
+        <view class='btn-block'>
+          <view class="btn_op2" bindtap='goToRewards'>积分商城</view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view>
+  </view>
+</view>
