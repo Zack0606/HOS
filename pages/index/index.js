@@ -9,9 +9,9 @@ Page({
       '../../image/room2.jpg',
       '../../image/room3.jpg',
     ],
-    indicatorDots: true,
+    indicatorDots: false,
     autoplay: false,
-    interval: 5000,
+    interval: 1000,
     duration: 1000
   },
   //事件处理函数
