@@ -4,16 +4,17 @@
     "pages/index/index",
     "pages/order/order",
     "pages/mine/mine",
-    "pages/mine/rewards/rewards"
+    "pages/mine/rewards/rewards",
+    "pages/index/comments/comments"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#00BFFF",
-    "navigationBarTitleText": "Hotel Resevation System",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#118FFF",
+    "navigationBarTitleText": "萤火虫创意酒店",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "selectedColor": "#00BFFF",
+    "selectedColor": "#118FFF",
     "list": [
       {
         "pagePath": "pages/index/index",

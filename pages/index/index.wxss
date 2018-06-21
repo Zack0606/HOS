@@ -1,26 +1,61 @@
 /**index.wxss**/
-.slide-image{
-  width:100%;
-  height:400rpx;
+
+.slide-image {
+  width: 100%;
+  height: 400rpx;
 }
 
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.title{
+  position: absolute;
+  top:250rpx;
+  color:#fff;
+}
+.capsule-demo {
+  font-size: 25px;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.thumb {
+  font-size: 15px;
+  color: #999;
+  margin-top: 10px;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.comment {
+  font-size: 15px;
+  color: #118fff;
+  margin-top: 10px;
 }
 
-.usermotto {
-  margin-top: 200px;
+
+.zan-capsule {
+  margin-top: 5px;
+  display: inline-block;
+  font-size: 25px;
+  vertical-align: middle;
+  line-height: 25px;
+  -webkit-transform: scale(0.83);
+  transform: scale(0.83);
+}
+
+.zan-capsule__left, .zan-capsule__right {
+  display: inline-block;
+  line-height: 20px;
+  height: 19px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.zan-capsule__left {
+  padding: 0 2px;
+  color: #fff;
+  background: #999;
+  border-radius: 2px 0 0 2px;
+  border: 1rpx solid #999;
+}
+
+.zan-capsule__right {
+  padding: 0 5px;
+  color: #999;
+  border-radius: 0 2px 2px 0;
+  border: 1rpx solid #999;
 }

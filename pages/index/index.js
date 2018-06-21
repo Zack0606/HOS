@@ -14,6 +14,11 @@ Page({
     interval: 1000,
     duration: 1000
   },
+  goToComments: function () {
+    wx.navigateTo({
+      url: './comments/comments',
+    })
+  },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
