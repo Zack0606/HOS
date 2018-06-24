@@ -4,6 +4,9 @@
     "zan-col": "../../dist/col/index",
     "zan-panel": "../../dist/panel/index",
     "zan-capsule": "../../dist/capsule/index",
-    "zan-icon": "../../dist/icon/index"
+    "zan-icon": "../../dist/icon/index",
+    "zan-noticebar": "../../dist/noticebar/index",
+    "zan-tag": "../../dist/tag/index",
+    "zan-button": "../../dist/btn/index"
   }
 }

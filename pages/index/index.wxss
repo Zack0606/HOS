@@ -8,28 +8,55 @@
 .swiper-container{
   position:relative;
 }
+.zan-tag{
+  font-size:30rpx;
+}
+
+.intro-part{
+  color:#9BABBA;
+  font-size:28rpx;
+  margin:6rpx;
+
+}
+
+.zan-btn--primary {
+  background-color:#118fff; 
+  width:25%;
+}
 
 .title{
-<<<<<<< HEAD
-  position: fixed;
-  top: 250rpx;
-  color:#fff;
-}
-.map{
-  font-size:30rpx;
-  color: black;
-  margin-top:20rpx;
-}
-.address{
-  margin:20rpx;
-}
-=======
   position: absolute;
   bottom: 16rpx;
   color:#fff;
 }
+.map{
+  font-size:30rpx;
+  color: #696969;
+  margin-top:rpx;
+}
+.address{
+  margin:20rpx;
+}
+.service{
+  color:#9BABBA;
+  font-size: 25rpx;
+}
+.serviceImg{
+  width:50rpx;
+  height:50rpx;
+  vertical-align: middle;
+}
+.eachService{
+  position: relative;
+  text-align: center;
+  margin-top: 15rpx;
+}
 
->>>>>>> 9ec25e9a40a51d75dce87938885fd8b577b6321f
+.noticebar{
+  margin-top:10rpx;
+}
+
+
 .capsule-demo {
   font-size: 50rpx;
 }

@@ -13,10 +13,43 @@ Page({
     autoplay: false,
     interval: 1000,
     duration: 1000,
+    hotelName:"萤火虫创意酒店",
     rating:4.9,
     percentage:97,
     commentNum:496,
-    address:"长沙市解放西路王府井B座5楼"
+    address:"长沙市解放西路王府井B座5楼",
+    deco:"2016年",
+    open:"2017年2月",
+    floor:"5",
+    roomNum:"17",
+    bar:{
+      text:"尊敬的顾客您好：本店停车自费！",
+      scrollable: true,
+      leftIcon: 'https://img.yzcdn.cn/public_files/2017/8/10/6af5b7168eed548100d9041f07b7c616.png'
+    },
+    service:[
+      {name:'wifi',
+      img:'../../static/images/icon/wifi.png'
+      },
+      {
+        name: '停车场',
+        img: '../../static/images/icon/停车场.png'
+      },
+      {
+        name: '刷卡支付',
+        img: '../../static/images/icon/刷卡.png'
+      }, {
+        name: '行李寄存',
+        img: '../../static/images/icon/行李.png'
+      }, {
+        name: '叫醒服务',
+        img: '../../static/images/icon/闹钟.png'
+      }, {
+        name: '洗漱用品',
+        img: '../../static/images/icon/洗漱用品.png'
+      },
+      
+    ]
   },
   goToHotel: function (e) {
     wx.openLocation({
@@ -30,6 +63,11 @@ Page({
   goToComments: function () {
     wx.navigateTo({
       url: './comments/comments',
+    })
+  },
+  goToOrderList: function () {
+    wx.navigateTo({
+      url: './orderList/orderList',
     })
   },
   //事件处理函数

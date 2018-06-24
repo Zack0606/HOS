@@ -1,17 +1,5 @@
 <!--index.wxml-->
 <view>
-<<<<<<< HEAD
-  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-    <block wx:for="{{imgUrls}}" wx:key="unique">
-      <swiper-item>
-        <image src="{{item}}" class="slide-image" />
-      </swiper-item>
-    </block>
-  </swiper>
-
-  <view class="title">萤火虫创意酒店</view>
-  <zan-panel class="star">
-=======
   <view class="swiper-container">
     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
       <block wx:for="{{imgUrls}}" wx:key="unique">
@@ -20,33 +8,95 @@
         </swiper-item>
       </block>
     </swiper>
-    <text class="title">萤火虫创意酒店</text>
+    <text class="title">{{hotelName}}</text>
   </view>
->>>>>>> 9ec25e9a40a51d75dce87938885fd8b577b6321f
-    <zan-row>
-      <zan-col col="7" col-class="custom-zan-col">
-        <view class="capsule-demo">
-          <zan-capsule color="#38f" leftText="{{rating}}分" rightText="非常好" />
-        </view>
-      </zan-col>
-      <zan-col col="11" col-class="custom-zan-col">
-        <view class="thumb">{{percentage}}%用户选择好评</view>
-      </zan-col>
-      <zan-col col="6" col-class="custom-zan-col">
-        <view class="comment" bindtap='goToComments'>{{commentNum}}条评价>>></view>
-      </zan-col>
-    </zan-row>
-  </zan-panel>
+  <zan-row>
+    <zan-col col="7" col-class="custom-zan-col">
+      <view class="capsule-demo">
+        <zan-capsule color="#38f" leftText="{{rating}}分" rightText="非常好" />
+      </view>
+    </zan-col>
+    <zan-col col="11" col-class="custom-zan-col">
+      <view class="thumb">{{percentage}}%用户选择好评</view>
+    </zan-col>
+    <zan-col col="6" col-class="custom-zan-col">
+      <view class="comment" bindtap='goToComments'>{{commentNum}}条评价>>></view>
+    </zan-col>
+  </zan-row>
 
   <zan-panel class="map">
-      <zan-row>
+    <zan-row>
       <zan-col col="18" col-class="custom-zan-col">
-        <view class="address"><zan-icon type="location" color="9BABBA"></zan-icon> {{address}}</view>
+        <view class="address">
+          <zan-icon type="location" color="#9BABBA"></zan-icon> {{address}}</view>
       </zan-col>
       <zan-col col="6" col-class="custom-zan-col">
         <view class="comment" bindtap='goToHotel'>地图/导航</view>
       </zan-col>
     </zan-row>
   </zan-panel>
-  <view class="intro"></view>
+
+  <zan-panel hide-border="{{ true }}" class="panel-example">
+    <view style="padding: 5rpx;background:#EBEBEB;"></view>
+  </zan-panel>
+
+  <zan-panel class="intro">
+    <zan-button bindtap='goToOrderList' type="primary">立即预定</zan-button>
+    <view style="font-size:30rpx;color:#696969;margin:10rpx;margin-left:30rpx;">
+      <zan-row>酒店介绍</zan-row>
+    </view>
+    <zan-row>
+      <zan-col col="8" col-class="custom-zan-col">
+        <view class="intro-part">
+          <zan-icon type="clock" color="#9BABBA"></zan-icon> 装修时间
+          <view style="color:#696969;margin-left:40rpx;">{{deco}}</view>
+        </view>
+      </zan-col>
+      <zan-col col="8" col-class="custom-zan-col">
+        <view class="intro-part">
+          <zan-icon type="passed" color="#9BABBA"></zan-icon> 开业时间
+          <view style="color:#696969;margin-left:40rpx;">{{open}}</view>
+        </view>
+      </zan-col>
+    </zan-row>
+    <zan-row>
+      <zan-col col="8" col-class="custom-zan-col">
+        <view class="intro-part">
+          <zan-icon type="upgrade" color="#9BABBA"></zan-icon> 酒店楼层
+          <view style="color:#696969;margin-left:40rpx;">{{floor}}层</view>
+        </view>
+      </zan-col>
+      <zan-col col="8" col-class="custom-zan-col">
+        <view class="intro-part">
+          <zan-icon type="discount" color="#9BABBA"></zan-icon> 房间数量
+          <view style="color:#696969;margin-left:40rpx;">{{roomNum}}间</view>
+        </view>
+      </zan-col>
+    </zan-row>
+    <zan-row>
+      <view style="font-size:25rpx;color:#696969;margin-bottom:5rpx;">
+        <text space="ensp">    独具一格的超新概念酒店——萤火虫创意酒店。 酒店位于最繁华的解放西路酒吧一条街。步行1分钟可达坡子街、五一广场、黄兴路步行街、太平古街、王府井百货。毗邻地铁口，交通便利。吃喝玩游购娱，近在咫尺！酒店配备双百兆4K网络电视、殿堂级立体环绕音响、迷离梦幻的灯光效果、浪漫前卫的大圆床等。颠覆传统的设计理念，为您提供前所未有的入住体验！</text>
+      </view>
+    </zan-row>
+  </zan-panel>
+
+  <zan-panel hide-border="{{ true }}" class="panel-example">
+    <view style="padding: 5rpx;background:#EBEBEB;"></view>
+  </zan-panel>
+
+  <zan-panel class="noticebar">
+    <zan-noticebar text="{{ bar.text }}" scrollable="{{ bar.scrollable }}" left-icon="{{ bar.leftIcon }}" />
+    <zan-row style="font-size:25rpx;color:#9BABBA;">可提供的服务有：
+    </zan-row>
+    <zan-row>
+      <view class="service" wx:for="{{service}}" wx:for-index="idx" wx:for-item="itemName">
+        <zan-col col="4" col-class="eachService">
+          <image class="serviceImg" src='{{itemName.img}}'></image>
+          <view class="serviceName">{{itemName.name}}</view>
+        </zan-col>
+      </view>
+    </zan-row>
+  </zan-panel>
+
+
 </view>

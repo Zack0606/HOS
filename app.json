@@ -5,7 +5,9 @@
     "pages/order/order",
     "pages/mine/mine",
     "pages/mine/rewards/rewards",
-    "pages/index/comments/comments"
+    "pages/index/comments/comments",
+    "pages/index/makeOrder/makeOrder",
+    "pages/index/orderList/orderList"
   ],
   "window": {
     "backgroundTextStyle": "light",
