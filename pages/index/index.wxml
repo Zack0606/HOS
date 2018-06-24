@@ -1,15 +1,15 @@
 <!--index.wxml-->
 <view>
-  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-    <block wx:for="{{imgUrls}}" wx:key="unique">
-      <swiper-item>
-        <image src="{{item}}" class="slide-image" />
-      </swiper-item>
-    </block>
-  </swiper>
-
-  <view class="title">萤火虫创意酒店</view>
-
+  <view class="swiper-container">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="unique">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <text class="title">萤火虫创意酒店</text>
+  </view>
     <zan-row>
       <zan-col col="6" col-class="custom-zan-col">
         <view class="capsule-demo">

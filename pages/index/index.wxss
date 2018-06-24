@@ -5,11 +5,16 @@
   height: 400rpx;
 }
 
+.swiper-container{
+  position:relative;
+}
+
 .title{
   position: absolute;
-  top:250rpx;
+  bottom: 16rpx;
   color:#fff;
 }
+
 .capsule-demo {
   font-size: 25px;
 }
