@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <view>
+<<<<<<< HEAD
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{imgUrls}}" wx:key="unique">
       <swiper-item>
@@ -10,6 +11,18 @@
 
   <view class="title">萤火虫创意酒店</view>
   <zan-panel class="star">
+=======
+  <view class="swiper-container">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="unique">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <text class="title">萤火虫创意酒店</text>
+  </view>
+>>>>>>> 9ec25e9a40a51d75dce87938885fd8b577b6321f
     <zan-row>
       <zan-col col="7" col-class="custom-zan-col">
         <view class="capsule-demo">

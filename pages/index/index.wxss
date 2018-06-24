@@ -5,7 +5,12 @@
   height: 400rpx;
 }
 
+.swiper-container{
+  position:relative;
+}
+
 .title{
+<<<<<<< HEAD
   position: fixed;
   top: 250rpx;
   color:#fff;
@@ -18,6 +23,13 @@
 .address{
   margin:20rpx;
 }
+=======
+  position: absolute;
+  bottom: 16rpx;
+  color:#fff;
+}
+
+>>>>>>> 9ec25e9a40a51d75dce87938885fd8b577b6321f
 .capsule-demo {
   font-size: 50rpx;
 }
