@@ -3,6 +3,7 @@
     "zan-row": "../../dist/row/index",
     "zan-col": "../../dist/col/index",
     "zan-panel": "../../dist/panel/index",
-    "zan-capsule": "../../dist/capsule/index"
+    "zan-capsule": "../../dist/capsule/index",
+    "zan-icon": "../../dist/icon/index"
   }
 }

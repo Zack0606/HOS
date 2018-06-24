@@ -9,20 +9,31 @@
   </swiper>
 
   <view class="title">萤火虫创意酒店</view>
-
+  <zan-panel class="star">
     <zan-row>
-      <zan-col col="6" col-class="custom-zan-col">
+      <zan-col col="7" col-class="custom-zan-col">
         <view class="capsule-demo">
-          <zan-capsule color="#38f" leftText="4.9分" rightText="非常好" />
+          <zan-capsule color="#38f" leftText="{{rating}}分" rightText="非常好" />
         </view>
       </zan-col>
-      <zan-col col="10" col-class="custom-zan-col">
-      <view class="thumb">97%用户选择好评</view>
+      <zan-col col="11" col-class="custom-zan-col">
+        <view class="thumb">{{percentage}}%用户选择好评</view>
       </zan-col>
-      <zan-col col="8" col-class="custom-zan-col">
-        <view class="comment" bindtap='goToComments'>496条评价</view>
+      <zan-col col="6" col-class="custom-zan-col">
+        <view class="comment" bindtap='goToComments'>{{commentNum}}条评价>>></view>
       </zan-col>
     </zan-row>
+  </zan-panel>
 
+  <zan-panel class="map">
+      <zan-row>
+      <zan-col col="18" col-class="custom-zan-col">
+        <view class="address"><zan-icon type="location" color="9BABBA"></zan-icon> {{address}}</view>
+      </zan-col>
+      <zan-col col="6" col-class="custom-zan-col">
+        <view class="comment" bindtap='goToHotel'>地图/导航</view>
+      </zan-col>
+    </zan-row>
+  </zan-panel>
   <view class="intro"></view>
 </view>

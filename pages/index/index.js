@@ -12,7 +12,20 @@ Page({
     indicatorDots: false,
     autoplay: false,
     interval: 1000,
-    duration: 1000
+    duration: 1000,
+    rating:4.9,
+    percentage:97,
+    commentNum:496,
+    address:"长沙市解放西路王府井B座5楼"
+  },
+  goToHotel: function (e) {
+    wx.openLocation({
+      latitude: 28.1919590000, 
+      longitude: 112.9751820000,
+      scale: 18,
+      name: '王府井商务楼',
+      address: '中国湖南省长沙市天心区解放西路316号'
+    })
   },
   goToComments: function () {
     wx.navigateTo({

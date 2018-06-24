@@ -6,56 +6,64 @@
 }
 
 .title{
-  position: absolute;
-  top:250rpx;
+  position: fixed;
+  top: 250rpx;
   color:#fff;
 }
+.map{
+  font-size:30rpx;
+  color: black;
+  margin-top:20rpx;
+}
+.address{
+  margin:20rpx;
+}
 .capsule-demo {
-  font-size: 25px;
+  font-size: 50rpx;
 }
 
 .thumb {
-  font-size: 15px;
+  font-size: 30rpx;
   color: #999;
-  margin-top: 10px;
+  margin-top: 20rpx;
 }
 
 .comment {
-  font-size: 15px;
+  font-size: 25rpx;
   color: #118fff;
-  margin-top: 10px;
+  margin-top: 25rpx;
 }
 
 
 .zan-capsule {
-  margin-top: 5px;
+  margin-top: 10rpx;
   display: inline-block;
-  font-size: 25px;
+  font-size: 50rpx;
   vertical-align: middle;
-  line-height: 25px;
+  line-height: 50rpx;
   -webkit-transform: scale(0.83);
   transform: scale(0.83);
 }
 
 .zan-capsule__left, .zan-capsule__right {
   display: inline-block;
-  line-height: 20px;
-  height: 19px;
+  line-height: 40rpx;
+  height: 38rpx;
   vertical-align: middle;
   box-sizing: border-box;
 }
 
 .zan-capsule__left {
-  padding: 0 2px;
+  padding: 0 4rpx;
   color: #fff;
   background: #999;
-  border-radius: 2px 0 0 2px;
-  border: 1rpx solid #999;
+  border-radius: 4rpx 0 0 4rpx;
+  border: 2rpx solid #999;
 }
 
 .zan-capsule__right {
-  padding: 0 5px;
+  padding: 0 10rpx;
   color: #999;
-  border-radius: 0 2px 2px 0;
-  border: 1rpx solid #999;
+  border-radius: 0 4rpx 4rpx 0;
+  border: 2rpx solid #999;
 }
