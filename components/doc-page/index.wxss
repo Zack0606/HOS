@@ -1,0 +1,17 @@
+.doc-container {
+  background: #F9F9F9;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 0rpx;
+}
+
+.doc-content {
+  padding: 15rpx;
+  overflow: hidden;
+  color: #666;
+}
+
+.doc-content--without-pd {
+  padding: 0 0;
+  padding-bottom: 15rpx;
+}
