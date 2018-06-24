@@ -14,19 +14,26 @@
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
+    "color": "#9BABBA",
     "selectedColor": "#118FFF",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "static/images/icon/home.png",
+        "selectedIconPath": "static/images/icon/home-on.png"
       },
       {
         "pagePath": "pages/order/order",
-        "text": "订单"
+        "text": "订单",
+        "iconPath": "static/images/icon/order.png",
+        "selectedIconPath": "static/images/icon/order-on.png"
       },
       {
         "pagePath": "pages/mine/mine",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "static/images/icon/user.png",
+        "selectedIconPath": "static/images/icon/user-on.png"
       }
     ]
   },

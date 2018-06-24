@@ -1,5 +1,5 @@
 .top-part {
-  background: #00BFFF;
+  background: #118fff;
   height:400rpx;
   display: block;
 }
