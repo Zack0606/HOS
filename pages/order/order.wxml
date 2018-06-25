@@ -1,6 +1,13 @@
-<!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
-</view>
+<doc-page title="TAB" without-padding>
+  <zan-panel>
+    <zan-row>
+      <view class="tabs {{itemName.selected?'tab-selected': ''}}" wx:for="{{tabs.list}}" wx:for-index="idx" wx:for-item="itemName" bindtap='switchTab' id="{{idx}}">
+        <zan-col col='8' col-class="tabitem">
+          <image class="tabs-icon" src="{{itemName.selected?itemName.selected_icon:itemName.icon}}"></image>
+          <view class="tabs-title">{{itemName.title}}</view>
+        </zan-col>
+      </view>
+    </zan-row>
+  </zan-panel>
+  
+</doc-page>

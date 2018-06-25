@@ -17,7 +17,6 @@ Page({
    
   },
   onShow:function(){
-    console.log('onLoad')
     var that = this
     app.getUserInfo(function (userInfo) {
       that.setData({

@@ -2,9 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/index/orderList/orderList",
-    
-    "pages/login/login",
     "pages/order/order",
+    "pages/login/login",
     "pages/mine/mine",
     "pages/mine/rewards/rewards",
     "pages/index/comments/comments",

@@ -1,8 +1,27 @@
-.log-list {
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+.doc-title {
+  margin-top: 50px;
 }
-.log-item {
-  margin: 10rpx;
+/* tabs */
+.tabs{
+  color:#9BABBA;
+  font-size: 25rpx;
+}
+
+.tabs-icon{
+  width:50rpx;
+  height:50rpx;
+}
+
+.tabs-title{
+  text-align: center;
+}
+
+.tabitem{
+  position: relative;
+  text-align: center;
+  margin-top: 15rpx;
+}
+
+.tab-selected{
+  color:#118fff;
 }

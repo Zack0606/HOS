@@ -1,4 +1,4 @@
-
+<!--pages/index/makeOrder/makeOrder.wxml-->
 <form bindsubmit="formSubmit" bindreset="formReset">
 <doc-page without-padding>
   <zan-panel>
@@ -6,42 +6,42 @@
       <zan-col col="24" col-class="roomInfo-zan-col">span: 24</zan-col>
     </zan-row>
   </zan-panel>
-  
+
   <zan-panel title='订单信息'>
     <zan-cell-group>
       <zan-field
-        title="{{ config.base.name.title }}"
-        placeholder="{{ config.base.name.placeholder }}"
+        title="{{ config.name.title }}"
+        placeholder="{{ config.name.placeholder }}"
         value="{{ value }}"
       >
       </zan-field>
       <zan-field
-        title="{{ config.base.tel.title }}"
-        placeholder="{{ config.base.tel.placeholder }}"
-        error="{{ config.base.tel.error }}"
-        input-type="{{ config.base.tel.inputType }}" 
+        title="{{ config.tel.title }}"
+        placeholder="{{ config.tel.placeholder }}"
+        error="{{ config.tel.error }}"
+        input-type="{{ config.tel.inputType }}"
       >
       </zan-field>
       <zan-field
-        title="{{ config.base.IDNumber.title }}"
-        placeholder="{{ config.base.IDNumber.placeholder }}"
-        input-type="{{ config.base.tel.inputType }}" 
+        title="{{ config.IDNumber.title }}"
+        placeholder="{{ config.IDNumber.placeholder }}"
+        input-type="{{ config.tel.inputType }}"
       >
       </zan-field>
       <view class="field-container">
         <zan-field
-          title="{{ config.base.roomNumber.title }}"
-          placeholder="{{ config.base.roomNumber.stepper }}间"
-          input-type="{{ config.base.tel.inputType }}" 
+          title="{{ config.roomNumber.title }}"
+          placeholder="{{ config.roomNumber.stepper }}间"
+          input-type="{{ config.tel.inputType }}"
           disabled="true"
         >
         </zan-field>
         <zan-stepper
-          stepper="{{ config.base.roomNumber.stepper }}"
-          min="{{ config.base.roomNumber.min }}"
-          max="{{ config.base.roomNumber.max }}"
+          stepper="{{ config.roomNumber.stepper }}"
+          min="{{ config.roomNumber.min }}"
+          max="{{ config.roomNumber.max }}"
           hidden="true"
-          data-component-id="config.base.roomNumber"
+          data-component-id="config.roomNumber"
           bind:change="handleZanStepperChange"
         ></zan-stepper>
       </view>
@@ -49,9 +49,9 @@
   </zan-panel>
 
   <zan-field class="padding-enable"
-    title="{{ config.base.disabled.title }}"
-    placeholder="{{ config.base.disabled.value }}"
-    disabled="{{ config.base.disabled.disabled }}"
+    title="{{ config.disabled.title }}"
+    placeholder="{{ config.disabled.value }}"
+    disabled="{{ config.disabled.disabled }}"
   >
   </zan-field>
 
