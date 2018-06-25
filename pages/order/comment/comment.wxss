@@ -1,0 +1,24 @@
+.background{
+  min-height: 100vh;
+  background-color: #FAFAFA
+}
+.roomInfo-zan-col {
+  line-height: 400rpx;
+  text-align: center;
+  background-color: #118fff;
+  font-size: 12px;
+  color: #fff;
+}
+
+.item{
+  position: relative;
+  left: 100rpx;
+  height: 50rpx;
+}
+
+.text-body{
+  top:20rpx;
+  color: #146131;
+  background-color: #F1f1f1;
+  height: 300rpx;
+}

@@ -18,7 +18,6 @@
       <zan-field
         title="{{ config.tel.title }}"
         placeholder="{{ config.tel.placeholder }}"
-        error="{{ config.tel.error }}"
         input-type="{{ config.tel.inputType }}"
       >
       </zan-field>
@@ -54,7 +53,7 @@
     disabled="{{ config.disabled.disabled }}"
   >
   </zan-field>
-
+ <button type="primary" form-type="submit">提交表单</button>
   <view class="footer-tips">
     <zan-tag type="primary" plain disabled>退款规则</zan-tag>
     <text>订单确定后不可取消/变更，如未入住，酒店将扣除全额房费；房间将整晚保留，请及时入住。</text>

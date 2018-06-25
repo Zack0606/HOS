@@ -1,0 +1,22 @@
+<view class="background">
+  <form>
+    <zan-panel>
+      <zan-row>
+        <zan-col col="24" col-class="roomInfo-zan-col">span: 24</zan-col>
+      </zan-row>
+    </zan-panel>
+    <view class="item">
+      <stars id="stars">
+      </stars>
+    </view>
+    <view style="height:20rpx"></view>
+    <zan-panel>
+      <zan-row>
+        <zan-col col="23" offset="1" class="body">
+          <textarea class="text-body" placeholder='评价' style="height: 3em" />
+        </zan-col>
+      </zan-row>
+    </zan-panel>
+    <button></button>
+  </form>
+</view>

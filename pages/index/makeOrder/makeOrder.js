@@ -23,7 +23,7 @@ Page({
       },
       roomNumber: {
         title: '房间数',
-        stepper: 2,
+        stepper: 1,
         min: 1,
         max: 10
       },
@@ -66,5 +66,13 @@ Page({
     this.setData({
       [`${componentId}.stepper`]: stepper
     });
+  },
+  formSubmit:function (e) {
+
+    console.log(e);
+
+
   }
+
+
 })
