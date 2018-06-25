@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // pages/order/comment/comment.js
 Page({
 
@@ -72,5 +73,18 @@ Page({
       tabArr: _obj
     });
 
+=======
+var app = getApp()
+
+Page({
+  data:{
+    rank:0,
+    content:null
+  },
+  onReady:function () {
+    var that = this;
+    this.stars = this.selectComponent("#stars");
+    console.log(that.stars.getRank()+ "sdfsdf")
+>>>>>>> aad2b8e15356c941bfe2b53a4815df1c2f53763f
   }
 })
