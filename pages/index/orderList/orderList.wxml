@@ -1,0 +1,45 @@
+<!--pages/index/orderList/orderList.wxml-->
+<zan-panel>
+  <zan-col col="20">
+    <zan-cell title="入住日期">
+      <zan-date-picker slot="footer" not-use="{{['hours','minutes','seconds']}}" bindchange="change1" bindcancel="cancel" placeholder="选择入住日期" format="YYYY-MM-DD" />
+    </zan-cell>
+    <zan-cell title="离店日期">
+      <zan-date-picker slot="footer" not-use="{{['hours','minutes','seconds']}}" bindchange="change2" bindcancel="cancel" placeholder="选择离店日期" format="YYYY-MM-DD" />
+    </zan-cell>
+  </zan-col>
+  <zan-col col="4">
+    <view style='margin-top:80rpx;font-size:30rpx;color:#118fff;'>共{{stay}}晚</view>
+  </zan-col>
+</zan-panel>
+
+<!-- <zan-panel>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[index]}}
+    </view>
+  </picker>
+</zan-panel> -->
+
+<!-- 
+   <view class="roomType" wx:for="{{roomList}}" wx:for-index="idx" wx:for-item="itemName">
+  <zan-panel>
+      <view class=>
+        <image class="roomPic" src="{{itemName.img}}"></image>{{itemName.name}}
+      </view>
+  </zan-panel>
+</view>    -->
+
+<view class='content-list'  wx:for="{{roomList}}" wx:key="unique" wx:for-item="items" wx:for-index="indexs">
+  <view class='list-image-box'>
+    <image class="list-image" mode="widthFix" src='{{items.img}}'></image>
+  </view>
+  <view class='issue-name'>
+    <view style='  font-size: 40rpx;font-weight:900rpx;margin-right:20rpx;'>{{items.name}}</view>
+    <view style='font-size:28rpx;'>{{items.person}}人 | 有窗:{{items.window}} | {{items.area}}平米</view>
+    <view style='margin-top:50rpx;color:#118fff;font-size:50rpx;margin-right:20rpx;'>
+      ¥ {{items.price}}
+    </view>
+  </view>
+  <zan-button id= "{{indexs}}" class="con-button" bindtap='goToMakeOrder' type="primary">预定</zan-button>
+</view>

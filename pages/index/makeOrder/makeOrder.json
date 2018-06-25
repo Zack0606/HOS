@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-{}
-=======
+
 {
   "navigationBarTitleText": "订单",
   "usingComponents": {
@@ -17,4 +15,4 @@
     "zan-stepper": "../../../dist/stepper/index"
   }
 }
->>>>>>> dev-liszt
+

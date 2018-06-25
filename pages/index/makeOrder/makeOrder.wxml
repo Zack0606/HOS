@@ -1,7 +1,4 @@
-<!--pages/index/makeOrder/makeOrder.wxml-->
-<<<<<<< HEAD
-<text>pages/index/makeOrder/makeOrder.wxml</text>
-=======
+
 <form bindsubmit="formSubmit" bindreset="formReset">
 <doc-page without-padding>
   <zan-panel>
@@ -72,4 +69,3 @@
     </zan-row>
   </zan-panel>
 </form>
->>>>>>> dev-liszt

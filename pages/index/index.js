@@ -5,9 +5,9 @@ const app = getApp()
 Page({
   data: {
     imgUrls: [
-      '../../static/images/room1.jpg',
-      '../../static/images/room2.jpg',
+      '../../static/images/room5.jpg',
       '../../static/images/room3.jpg',
+      '../../static/images/room0.jpg',
     ],
     indicatorDots: false,
     autoplay: false,

@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-/* pages/index/makeOrder/makeOrder.wxss */
-=======
+
 .roomInfo-zan-col {
   line-height: 400rpx;
   text-align: center;
@@ -66,4 +64,3 @@ button{
   font-size: 30rpx;
   color: #fff;
 }
->>>>>>> dev-liszt

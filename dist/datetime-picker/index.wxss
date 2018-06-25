@@ -42,7 +42,7 @@ picker-view-column {
   justify-content: space-between;
 }
 .picker-action view:last-child {
-  color: #1aad16;
+  color: #118fff;
 }
 
 .picker picker-view {

@@ -45,7 +45,7 @@
   position: absolute;
   right:0rpx;
   margin:40rpx;
-  font-size: 32rpx;
+  font-size: 30rpx;
   text-align: center;
 }
 
