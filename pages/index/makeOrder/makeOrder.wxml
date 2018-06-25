@@ -1,65 +1,41 @@
 <!--pages/index/makeOrder/makeOrder.wxml-->
 <form bindsubmit="formSubmit" bindreset="formReset">
-<doc-page without-padding>
-  <zan-panel>
-    <zan-row>
-      <zan-col col="24" col-class="roomInfo-zan-col">span: 24</zan-col>
-    </zan-row>
-  </zan-panel>
+  <doc-page without-padding>
+    <zan-panel>
+      <zan-row>
+        <zan-col col="24" col-class="roomInfo-zan-col">span: 24</zan-col>
+      </zan-row>
+    </zan-panel>
 
-  <zan-panel title='订单信息'>
-    <zan-cell-group>
-      <zan-field
-        title="{{ config.name.title }}"
-        placeholder="{{ config.name.placeholder }}"
-        value="{{ value }}"
-      >
-      </zan-field>
-      <zan-field
-        title="{{ config.tel.title }}"
-        placeholder="{{ config.tel.placeholder }}"
-        error="{{ config.tel.error }}"
-        input-type="{{ config.tel.inputType }}"
-      >
-      </zan-field>
-      <zan-field
-        title="{{ config.IDNumber.title }}"
-        placeholder="{{ config.IDNumber.placeholder }}"
-        input-type="{{ config.tel.inputType }}"
-      >
-      </zan-field>
-      <view class="field-container">
-        <zan-field
-          title="{{ config.roomNumber.title }}"
-          placeholder="{{ config.roomNumber.stepper }}间"
-          input-type="{{ config.tel.inputType }}"
-          disabled="true"
-        >
+    <zan-panel title='订单信息'>
+      <zan-cell-group>
+        <zan-field name="realName" title="{{ config.name.title }}" placeholder="{{ config.name.placeholder }}">
         </zan-field>
-        <zan-stepper
-          stepper="{{ config.roomNumber.stepper }}"
-          min="{{ config.roomNumber.min }}"
-          max="{{ config.roomNumber.max }}"
-          hidden="true"
-          data-component-id="config.roomNumber"
-          bind:change="handleZanStepperChange"
-        ></zan-stepper>
-      </view>
-    </zan-cell-group>
-  </zan-panel>
+        <zan-field name="phoneNumber" title="{{ config.tel.title }}" placeholder="{{ config.tel.placeholder }}" input-type="{{ config.tel.inputType }}" maxlength="11">
+        </zan-field>
+        <zan-field name="IDNumber" title="{{ config.IDNumber.title }}" placeholder="{{ config.IDNumber.placeholder }}" maxlength="18">
+        </zan-field>
+        <view class="field-container">
+          <zan-field name="roomNumber" title="{{ config.roomNumber.title }}" input-type="number" disabled="true" value="{{ config.roomNumber.stepper }}">
+          </zan-field>
+          <zan-stepper stepper="{{ config.roomNumber.stepper }}" min="{{ config.roomNumber.min }}" max="{{ config.roomNumber.max }}" hidden="true" data-component-id="config.roomNumber" bind:change="handleZanStepperChange"></zan-stepper>
+        </view>
+      </zan-cell-group>
+    </zan-panel>
 
-  <zan-field class="padding-enable"
-    title="{{ config.disabled.title }}"
-    placeholder="{{ config.disabled.value }}"
-    disabled="{{ config.disabled.disabled }}"
-  >
-  </zan-field>
+    <zan-field name="remarks" title="{{ config.remarks.title }}" placeholder="{{ config.remarks.placeholder }}">
+    </zan-field>
 
-  <view class="footer-tips">
-    <zan-tag type="primary" plain disabled>退款规则</zan-tag>
-    <text>订单确定后不可取消/变更，如未入住，酒店将扣除全额房费；房间将整晚保留，请及时入住。</text>
-  </view>
-</doc-page>
+    <zan-field class="padding-enable" title="{{ config.disabled.title }}" placeholder="{{ config.disabled.value }}" disabled="{{ config.disabled.disabled }}">
+    </zan-field>
+
+
+
+    <view class="footer-tips">
+      <zan-tag type="primary" plain disabled>退款规则</zan-tag>
+      <text>订单确定后不可取消/变更，如未入住，酒店将扣除全额房费；房间将整晚保留，请及时入住。</text>
+    </view>
+  </doc-page>
   <zan-panel class="confirm">
     <zan-row>
       <zan-col col="14" col-class="sum">总计</zan-col>

@@ -6,7 +6,6 @@ Page({
   data: {
     checkInDate: "",
     checkOutDate: "",
-    cid: '',
     stay: '',
     array: ['美国', '中国', '巴西', '日本'],
     roomList:[]
@@ -15,7 +14,7 @@ Page({
     this.setData({ //获取数据成功后的数据绑定  
       roomList: postRoomType.roomType,
     });
-   // console.log(this.data.roomList);
+  console.log(this.data.roomList);
   },
   goToMakeOrder: function (e) {
     wx.setStorage({
@@ -33,8 +32,9 @@ Page({
     this.setData({
       checkInDate: detail.value[0] + '-' + detail.value[1] + '-' + detail.value[2]
     });
-    this.setData({
-      cid: detail.value[2]
+    wx.setStorage({
+      key: "checkInDate",
+      data: detail.value[0] + '-' + detail.value[1] + '-' + detail.value[2]
     });
    // console.log(this.data.cid);
   },
@@ -44,10 +44,15 @@ Page({
     this.setData({
       checkOutDate: detail.value[0] + '-' + detail.value[1] + '-' + detail.value[2]
     });
-    this.setData({
-      stay: detail.value[2] - this.data.cid
+    wx.setStorage({
+      key: "checkOutDate",
+      data: detail.value[0] + '-' + detail.value[1] + '-' + detail.value[2]
     });
-    //console.log(this.data.stay);
+
+    var stay1 = (new Date(this.data.checkOutDate) - new Date(this.data.checkInDate)) / (1000 * 60 * 60 * 24);
+    this.setData({
+      stay:stay1
+    });
   },
 
 })

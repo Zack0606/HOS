@@ -1,13 +1,14 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/index/orderList/orderList",
+    "pages/index/makeOrder/makeOrder",
+    "pages/order/comment/comment",
+    "pages/index/index",
     "pages/order/order",
     "pages/login/login",
     "pages/mine/mine",
     "pages/mine/rewards/rewards",
-    "pages/index/comments/comments",
-    "pages/index/makeOrder/makeOrder"
+    "pages/index/comments/comments"
   ],
   "window": {
     "backgroundTextStyle": "light",
