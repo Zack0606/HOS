@@ -1,30 +1,4 @@
-<<<<<<< HEAD
-/* pages/order/comment/comment.wxss */
-.l-evalbox{
-  height: 100rpx;
-  padding: 0 3%;
-  margin-top: 10rpx;
-  background: #FFF;
-  line-height: 100rpx;
-}
-.l-evaltxt{
-  width: 120rpx;
-  display: block;
-  font-size: 26rpx;
-  color: #666666;
-}
-.l-evalist .icon{
-  background-position: -77rpx -246rpx;
-  width: 40rpx;
-  height: 43rpx;
-  margin-right: 30rpx;
-}
-.l-evalist .cur{
-  background-position: -128rpx -246rpx;
-}
-.l-evalist .icon:last-child{
-  margin: 0;
-=======
+
 .background{
   min-height: 100vh;
   background-color: #FAFAFA
@@ -48,5 +22,4 @@
   color: #146131;
   background-color: #F1f1f1;
   height: 300rpx;
->>>>>>> aad2b8e15356c941bfe2b53a4815df1c2f53763f
 }

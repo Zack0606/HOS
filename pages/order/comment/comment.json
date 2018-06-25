@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-{}
-=======
 {
   "navigationBarTitleText": "评价",
   "usingComponents": {
@@ -18,4 +15,3 @@
     "stars": "../../../components/stars/stars"
   }
 }
->>>>>>> aad2b8e15356c941bfe2b53a4815df1c2f53763f
